@@ -1,0 +1,9 @@
+node_modules
+dist
+.convex
+.agents
+convex/_generated
+src/routeTree.gen.ts
+pnpm-lock.yaml
+*.tsbuildinfo
+.claude

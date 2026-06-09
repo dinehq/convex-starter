@@ -1,0 +1,15 @@
+node_modules
+dist
+.env.local
+.env.*.local
+.DS_Store
+*.tsbuildinfo
+.convex
+
+# Claude Code: commit only the convex-starter skill; ignore local settings and
+# the Convex AI skills duplicated here (they live in .agents/, regenerable via
+# `npx convex ai-files install`).
+.claude/*
+!.claude/skills
+.claude/skills/*
+!.claude/skills/convex-starter
