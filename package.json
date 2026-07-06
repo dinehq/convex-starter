@@ -11,7 +11,7 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "fix": "prettier --write . --log-level warn && eslint . --fix",
+    "fix": "eslint . --fix && prettier --write . --log-level warn",
     "knip": "knip",
     "clone": "echo '🚀 Exporting data from production...' && convex export --prod --path .temp-prod-export.zip && echo '📥 Importing data to development...' && convex import .temp-prod-export.zip --replace-all --yes && echo '🧹 Cleaning up...' && rm .temp-prod-export.zip && echo '✅ Data successfully cloned from production to development!'"
   },
@@ -40,6 +40,7 @@
     "babel-plugin-react-compiler": "^1.0.0",
     "concurrently": "^10.0.3",
     "eslint": "^10.6.0",
+    "eslint-plugin-better-tailwindcss": "^4.6.1",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
     "globals": "^17.7.0",
