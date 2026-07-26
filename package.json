@@ -16,7 +16,7 @@
     "clone": "echo '🚀 Exporting data from production...' && convex export --prod --path .temp-prod-export.zip && echo '📥 Importing data to development...' && convex import .temp-prod-export.zip --replace-all --yes && echo '🧹 Cleaning up...' && rm .temp-prod-export.zip && echo '✅ Data successfully cloned from production to development!'"
   },
   "dependencies": {
-    "@auth/core": "^0.37.4",
+    "@auth/core": "^0.41.3",
     "@convex-dev/auth": "^0.0.94",
     "@tanstack/react-router": "^1.170.17",
     "convex": "^1.42.1",
